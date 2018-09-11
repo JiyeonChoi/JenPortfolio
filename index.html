@@ -1,272 +1,232 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>CHOI JIYEON</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="shortcut icon" href="images/favicon/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="images/favicon/indigo-touch-icon.png">
+<script src="js/jquery.min.js"></script>
+<script src="js/indigo.min.js"></script>
 
-  <head>
+<script>
+    function fnMove(seq){
+        var offset = $("#" + seq).offset();
+        $('html, body').animate({scrollTop : offset.top}, 600);
+    }
+</script>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!--flexslider-->
+<link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="flexslider/jquery.flexslider.js"></script>
 
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/creative.min.css" rel="stylesheet">
+<!-- Place in the <head>, after the three links -->
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
 
-  </head>
 
-  <body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>Your Favorite Source of Free Bootstrap Themes</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-          </div>
-        </div>
-      </div>
-    </header>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header cfixed">
+            <h1 class="logo"><a href=""></a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#" onclick="fnMove('about');">ABOUT</a></li>
+                    <li><a href="#" onclick="fnMove('project');">PROJECT</a></li>
+                    <li><a href="#" onclick="fnMove('contact');">CONTACT</a></li>
+                </ul>
+            </nav>
+            <span class="menu-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </header>
+        <article class="slider">
+            <img src="images/p-images/slide01.jpg" alt="">
+        </article>
 
-    <section class="bg-primary" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">We've got what you need!</h2>
-            <hr class="light my-4">
-            <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">At Your Service</h2>
-            <hr class="my-4">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1"></i>
-              <h3 class="mb-3">Sturdy Templates</h3>
-              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-paper-plane text-primary mb-3 sr-icon-2"></i>
-              <h3 class="mb-3">Ready to Ship</h3>
-              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-code text-primary mb-3 sr-icon-3"></i>
-              <h3 class="mb-3">Up to Date</h3>
-              <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-heart text-primary mb-3 sr-icon-4"></i>
-              <h3 class="mb-3">Made with Love</h3>
-              <p class="text-muted mb-0">You have to make your websites with love these days!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
+                                <hr class="divider" id = "about">
+        <section class="content">
+            <section class="display-section">
+                <div class="container">
+                    <h2 class="sec-tit">ABOUT</h2>
+                    <p class="desc">
+                       
+                        Choi Jiyeon 
+                        <br>06. 14. 1994
+ </p>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
+            </section>
+            <section class="promotion-section">
+                <div class="container">
+                    <ul class="promo-list">
+                        <li>
+                            <a href="">
+                                <img src="images/s-images/promo01.png" alt="">
+                                <h3>EDUCATION</h3>
+                                <p> 
+                                Mar. 2013 - Present ­ 
+                                <br>DongA University, Busan, Korea 
+                                <br> Graduation expected in Feb. 2018
+                                <br> GPA:4.07/4.5 
+                                <br> Major: Computer Engineering </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/s-images/promo02.png" alt="">
+                                <h3>ACTIVITIES</h3>
+                                <p> - Joined DongA Computer Association  
+                                    - Joined Security Club at DongA University 
+                                   <br> - Participated in an algorithm competition 
+                                   <br> - Teaching C programming for freshmen in a club activity </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/s-images/promo03.png" alt="">
+                                <h3>SKILLS</h3>
+                                <p>
+                                    C/C++   / Advanced
+                                    <br>JAVA    / Advanced
+                                    <br>HTML    / Intermediate
+                                    <br>JSP     / Basic
+                                    <br>Photoshop / Intermediate
+                                   <br>AfterEffects / Intermediate
+                                    <br>Vegas       / Intermediate
+                                     <br>PHP      / Basic
+                                     <br>MY-SQL   / Intermediate
+                                     <br>JavaScript  / Basic 
+                                    <br>Illustrator  / Intermediate
+                                   <br>Python / Advanced
+                                  <br> Haskell / Intermediate
+                                 <br>  Android / Advanced
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/s-images/cerfiticate.png" alt="">
+                                <h3>CERTIFICATES </h3>
+                                <p>
+                                    - IoT(Internet of Things) design practice system certificate (Huins education center) <br>
+                                    <br> - Certificate of UCC contest(6th D-CAP at DongA university) 
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
+            </section>
+            <hr class="divider" id ="project">
+
+            <section class="blog-section">
+                <div class="container">
+                    <h2 class="sec-tit">PROJECT</h2>
+                   
+
+                    <ul class="blog-list">
+                        <li>
+                            <a href="project01.html"><img src="images/p-images/project01.jpg" alt=""></a>
+                            <time datetime="2015">May 2015 ~ Jun 2015</time>
+                            <a href=""><h3>Safety Password Generator </h3></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/p-images/project02.jpg" alt=""></a>
+                            <time datetime="2015-10-30">May 2015 ~ Jun 2015</time>
+                            <a href=""><h3>Smart Door Lock</h3></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/p-images/project03.jpg" alt=""></a>
+                            <time datetime="2016">2016 ~ Jun 2016</time>
+                            <a href=""><h3>Multi-face classification system for prosopagnosia</h3></a>
+                        </li>
+                    </ul>
+
+
+                         <ul class="blog-list">
+                        <li>
+                            <a href=""><img src="images/p-images/project04.jpg" alt=""></a>
+                            <time datetime="2015">Jun 2015 ~</time>
+                            <a href=""><h3>PC remote control application</h3></a>
+                        </li>
+                       
+                    </ul>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
+            </section>
+
+                        <hr class="divider">
+
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/p-images/pic03.jpg"/>
+    </li>
+    <li>
+      <img src="images/p-images/pic02.jpg" />
+    </li>
+    <li>
+      <img src="images/p-images/pic01.jpg" style="margin-top:5%;" />
+    </li>
+    
+
+     <li>
+      <img src="images/p-images/pic04.jpg" />
+    </li>
+
+     <li>
+      <img src="images/p-images/pic05.jpg" />
+    </li>
+
+     <li>
+      <img src="images/p-images/pic06.jpg" style="margin-top:5%;" />
+    </li>
+  </ul>
+</div>
+                        <hr class="divider" id = "contact">
+
+            <section class="contact-section">
+                <div class="container">
+                    <h2 class="sec-tit">CONTACT</h2>
+                    <div class="form-box">
+
+
+                        <form action="" method="">
+                            <fieldset class="cfixed">
+                                <legend class="blind">CONTACT</legend>
+
+
+                                <div class="form">
+<article>                                     <h3> Phone: 010 9189 9408</h3>
+                        <h3> Email Address: thatkxkds2@naver.com<h3>
+                            <h3>Instagram : thatkxkds2 <h3>
+                                   </article>
+
+                                </div>
+                                
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
-            <hr class="my-4">
-            <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
-            <p>123-456-6789</p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
-            <p>
-              <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
-
-  </body>
-
+            </section>
+        </section>
+        <footer class="footer" >
+        <p class="copyright" style="color:#303f9f;">ⓒ 2017. Choi Jiyeon all rights reserved </p>
+        </footer>
+    </div>
+</body>
 </html>
